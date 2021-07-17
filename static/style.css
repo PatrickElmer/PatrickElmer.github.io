@@ -1,0 +1,177 @@
+:root {
+  --light: #fffef8;
+  --background: #f2eeea;
+  --accent: #ba1820;
+  --text: #404040;
+  --container-nav: 800px;
+  --container: var(--container-nav);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+body::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 3px;
+  background: var(--accent);
+}
+
+.title,
+.subtitle {
+  text-align: left;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.subtitle {
+  font-size: 3rem;
+  padding-bottom: 5rem;
+}
+
+.author {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.affiliation {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.abstract {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  text-align: justify;
+}
+
+/* Links */
+
+nav a,
+table a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+nav a:link,
+table a:link,
+nav a:visited,
+table a:visited {
+  color: inherit;
+}
+
+/* Navbar */
+
+nav {
+  /* box-shadow: 0 0 1px var(--fg); */
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  max-width: var(--container-nav);
+  list-style: none;
+  text-decoration: none;
+  margin: 0 auto;
+  padding-left: 1rem;
+}
+
+nav ul li {
+  /* flex-grow: 1; */
+  padding: 0 2rem;
+  text-align: center;
+  height: 5rem;
+  margin: 0;
+}
+
+nav ul li a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  color: var(--accent);
+}
+
+nav .logo {
+  width: min-content;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  margin-left: auto;
+}
+
+nav .logo p,
+nav .logo p small {
+  margin: 0;
+  /* font-weight: 600; */
+}
+
+nav .logo p {
+  font-size: 2.2rem;
+}
+
+nav .logo a {
+  font-size: 1.3rem;
+  color: var(--accent);
+}
+
+/* hashpages */
+
+#hashcontainer {
+  width: 100%;
+  flex: 1;
+  height: 0;
+  overflow-y: auto;
+}
+
+#hashpages {
+  margin: 0 auto;
+  padding: 40px 60px 0 60px;
+  max-width: var(--container);
+}
+
+/* Footer */
+
+footer {
+  box-shadow: 0 0 1px var(--fg);
+  text-align: center;
+  padding: 1.5rem 0;
+  margin: 0;
+  z-index: 2;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+}
