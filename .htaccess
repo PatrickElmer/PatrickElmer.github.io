@@ -1,4 +1,4 @@
 AuthName "Dialog prompt"
 AuthType Basic
-AuthUserFile .htpasswd
+AuthUserFile /.htpasswd
 Require valid-user
