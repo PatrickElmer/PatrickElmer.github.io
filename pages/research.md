@@ -1,6 +1,6 @@
 ## Areas of specialization
 
-Historical comparative linguistics, East Asian prehistory, Japonic language family, Proto-Ryukyuan
+Historical comparative linguistics, East Asian prehistory, Japonic language family, Proto-Ryūkyūan
 
 ## Abstracts of publications
 
