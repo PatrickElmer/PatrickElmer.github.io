@@ -3,7 +3,7 @@
   --background: #f2eeea;
   --accent: #ba1820;
   --text: #404040;
-  --container-nav: 800px;
+  --container-nav: 1000px;
   --container: var(--container-nav);
 }
 
@@ -59,6 +59,10 @@ body::before {
   padding-top: 10rem;
   padding-bottom: 5rem;
   text-align: justify;
+}
+
+.smallcaps {
+  font-variant: small-caps;
 }
 
 /* Links */
