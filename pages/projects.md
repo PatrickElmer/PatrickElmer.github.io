@@ -15,39 +15,12 @@ th {
 } */
 </style>
 
-## Projects
+## Dissertation project
 
-### Proto-Ryūkyūan
+### Proto-Japonic Origins in the Yangtze Delta: Comparing Rice-related Lexicon of Proto-Japonic with Those in the Language Families of East Asia
 
-|     | a   | i   | u   | ɨ   |
-| --- | --- | --- | --- | --- |
-| p   |     |     |     |     |
-| t   |     |     |     |     |
-| k   |     |     |     |     |
-| ʔ   |     |     |     |     |
-| b   |     |     |     |     |
-| d   |     |     |     |     |
-| g   |     |     |     |     |
-| m   |     |     |     |     |
-| n   |     |     |     |     |
-| ɴ   |     |     |     |     |
-| s   |     |     |     |     |
-| w   |     |     |     |     |
-| r   |     |     |     |     |
-| j   |     |     |     |     |
+This research deals with the language dispersal in East Asia and its implications for the origins of the Japanese languages. For this purpose, the comparison of vocabulary related to the spread of wet rice agriculture from the Yangtze river delta to Japan will be conducted. It is known that the Japanese rice plant originates along the Yangtze river. By examining rice-related vocabulary, it is expected that the transmission of such vocabulary will become clear and associated human movement can be clarified. Based on the possible human migration movements, the developmental paths of the Japanese languages can be traced back to their origins.
 
-### Top 10 WOLD
+As for the comparison of vocabulary, I will use the comparative method, which allows us to determine whether each form is borrowed, inherited, or unrelated through sound correspondences. This research first reconstructs vocabulary related to wet rice agriculture of Proto-Japonic based on mainland Japanese and Ryūkyūan language data. This language stage corresponds to the introduction of wet rice agriculture to Japan around 950 BC (during the Yayoi period). The reconstructed lexical items of Proto-Japonic are then compared to vocabulary from languages of East Asia including reconstructed forms and those in modern languages.
 
-| **Naze 名瀬** | **Koniya 古仁屋** | **Kametsu 亀津** | **Shitooke 志戸桶** | **Serikaku 瀬利覚** | **Chabana 茶花** | **Hentona 辺土名** | **Iejima 伊江島** | **Ōjima 奥武** | **Hirara 平良** | **Ikema 池間** | **Ishigaki 石垣** | **Hateruma 波照間** |
-| ------------- | ----------------- | ---------------- | ------------------- | ------------------- | ---------------- | ------------------ | ----------------- | -------------- | --------------- | -------------- | ----------------- | ------------------- |
-| _ʔmatʃi_      | _ʔmat_            | _ʔmatsï̥_         | _ʔumatsu_           | _mattʃi_            | _matʃi_          | _ꜰiː_              | _tiː_             | _çiː_          | _(ʔ)umatsï_     | _(ʔ)umatsï_    | _pïː_             | _pïː_               |
-| _neɴ_         | _neːm_            | _nei_            | _neːɴ_              | _naːɴ_              | _neː_            | _neːɴ_             | _neɴ_             | _neːɴ_         | _ɲaːɴ_          | _ɲaːɴ_         | _neːnu_           | _neːnu_             |
-| _ʔikjuɴ_      | _ʔikjum_          | _ʔikjui_         | _ʔikjuɴ_            | _ʔikjuɴ_            | _ʔikjuɴ_         | _ʔikiɴ_            | _ʔitʃuɴ_          | _ʔitʃuɴ_       | _(ʔ)ikï_        | _(ʔ)ikiː_      | _ʔikïɴ_           | _ʔŋguɴ_             |
-| _hana_        | _hana_            | _hana_           | _hana_              | _hanaː_             | _pana_           | _ꜰana_             | _pana_            | _hana_         | _pana_          | _hana_         | _pana_            | _pḁn̥a_              |
-| _suɴ_         | _ʃum_             | _ʃuːi_           | _suɴ_               | _ʃuɴ_               | _ʃuɴ_            | _suɴ_              | _ʃuɴ_             | _suɴ_          | _sï̥sï_          | _ssu_          | _sïɴ_             | _suɴ_               |
-| _tʼʒi_        | _tʼʒiː_           | _tʼzïː_          | _tʼʒiː_             | _tʃiː_              | _tʃiː_           | _tʼʒiː_            | _tʼʒiː_           | _tʃiː_         | _tsï̥sï_         | _tsïː_         | _tsïː_            | _dzïː_              |
-| _tʼʒi_        | _tʼʒiː_           | _tʼzïː_          | _tʼʒiː_             | _tʃiː_              | _tʃiː_           | _tʼʒiː_            | _tʃiː_            | _tʃiː_         | _tsï̥sï_         | _(ʔ)akatsï_    | _tsïː_            | _dzïː_              |
-| _mudʒi_       | _mïˑt_            | _mïdzï_          | _mïdzu_             | _midʒiː_            | _midʒi_          | _midʒi_            | _midzi_           | _midʒi_        | _midzï_         | _midzï_        | _midzï_           | _midzï_             |
-| _ku̥tʃi_       | _kʼutʃ_           | _kutsï_          | _kʼutʃi_            | _ku̥tʃiː_            | _kutʃi_          | _kʼutʃi_           | _ku̥tʃi_           | _ku̥tʃi_        | _fu̥tsï_         | _fu̥ːsï_        | _ꜰu̥tsï_           | _ꜰu̥tsï_             |
-| _kjuɴ_        | _kjum_            | _kjui_           | _kjuːɴ_             | _kjuɴ_              | _kjuɴ_           | _ꜰuiɴ_             | _tʃuɴ_            | _tʃuːɴ_        | _kï̥sï_          | _fuː_          | _kïɴ_             | _kuɴ_               |
-| _waɴ_         | _waɴ_             | _waɴ_            | _waɴ_               | _wanu_              | _wanu_           | _waɴ_              | _waɴ_             | _waɴ_          | _baɴ_           | _baɴ_          | _banu_            | _b̥anu_              |
+The lexical items compared here will be those related to rice plant and wet rice agriculture. Archaeobotanical research has shown that the Japanese rice plant – the current staple food of Japan – has its origins along the Yangtze river. However, it is not yet clear how rice and wet rice agriculture reached Japan. It has been claimed that languages often spread together with the important agriculture of its speakers. By looking at the spread of rice-related terms, this research will identify remnants of the development of languages in East Asia, which will help understand how these languages are related to the development of Proto-Japonic. This allows for a new assessment of the dating and location of the initial speakers of the Japonic languages.
