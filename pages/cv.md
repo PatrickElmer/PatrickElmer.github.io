@@ -17,8 +17,8 @@ td a {
 |      |                                                                                                                                                   |                                                |
 | :--- | :------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------- |
 | 2019 | 　"On the Origins of the Japanese Language", _Vienna Journal of East Asian Studies_ 11/1: 212–239.                                                | [PDF](https://doi.org/10.2478/vjeas-2019-0008) |
-| 2019 | 　*Dating the split of the Japonic language family. The Pre-Old Japanese corpus*. Master's thesis (Historical Linguistics). University of Vienna. | [PDF](https://ubdata.univie.ac.at/AC15473859)  |
-| 2019 | 　*Origins of the Japanese languages. A multidisciplinary approach*. Master's thesis (Japanese Studies). University of Vienna.                    | [PDF](https://ubdata.univie.ac.at/AC15321149)  |
+| 2019 | 　*Dating the split of the Japonic language family. The Pre-Old Japanese corpus*. Master's thesis (Historical Linguistics). University of Vienna. | [PDF](http://othes.univie.ac.at/58828/)        |
+| 2019 | 　*Origins of the Japanese languages. A multidisciplinary approach*. Master's thesis (Japanese Studies). University of Vienna.                    | [PDF](http://othes.univie.ac.at/55805/)        |
 
 ## Education
 
