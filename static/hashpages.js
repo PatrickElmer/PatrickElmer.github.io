@@ -28,6 +28,7 @@ async function loadContent(uri) {
       }
     }
   }
+  onHashLoad();
 }
 
 async function fetchData(link) {
@@ -46,4 +47,16 @@ async function fetchData(link) {
 function updateHashPages(content) {
   hashPages.innerHTML = "";
   hashPages.insertAdjacentHTML("afterbegin", content);
+}
+
+function onHashLoad() {
+  externalLinksInNewTab();
+}
+
+function externalLinksInNewTab() {
+  document.querySelectorAll("a").forEach(function (link) {
+    if (!link.hash) {
+      link.setAttribute("target", "_blank");
+    }
+  });
 }
