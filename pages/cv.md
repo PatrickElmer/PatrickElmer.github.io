@@ -44,7 +44,3 @@ svg:hover {
 | 2021-06-25 　 | 『コンピューターを用いた日琉祖語の稲作に関わる語の再建』 拡大科研会議　琉球大学                                                                              |                                                                                                        |
 | 2020-11-28 　 | "Auf­schlüs­se über die Lage von Yama­tai durch For­schung zu den Kuma­so und Hayato," _35. Tref­fen der Initia­ti­ve zur his­to­ri­schen Japan­for­schung._ | [Link](https://www.japanische-geschichte.de/protokolle6/#treffen35)                                    |
 | 2020-11-21 　 | "Auf­schlüs­se über die Lage von Yama­tai durch For­schung zu den Kuma­so und Hayato," _Virtuelles VSJF-Fachgruppentreffen._                                 | [Link](http://vsjf.net/die-vsjf/fachgruppen/fachgruppe-geschichte/fachgruppensitzung-geschichte-2020/) |
-
-<script>
-    console.log("JavaScript code from cv.md")
-</script>
