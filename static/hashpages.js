@@ -49,14 +49,35 @@ function updateHashPages(content) {
   hashPages.insertAdjacentHTML("afterbegin", content);
 }
 
-function onHashLoad() {
-  externalLinksInNewTab();
-}
-
-function externalLinksInNewTab() {
+function openExternalLinksInNewTab() {
   document.querySelectorAll("a").forEach(function (link) {
     if (!link.hash) {
       link.setAttribute("target", "_blank");
     }
   });
 }
+
+function onHashLoad() {
+  openExternalLinksInNewTab();
+}
+
+async function fetchEncryptedJson() {
+  let uri = sessionStorage.getItem("hashPassword");
+  if (!uri) {
+    uri = prompt("Please enter the password");
+    if (!uri) {
+      console.error("No password provided. Could not retrieve data!");
+      return;
+    }
+  }
+  let response = await fetch(`static/${sha256(uri)}.json`);
+  if (!response.ok) {
+    console.error("Password incorrect. Could not retrieve data!");
+    return;
+  }
+  let content = await response.text();
+  console.log(content);
+  sessionStorage.setItem("hashPassword", uri);
+}
+
+fetchEncryptedJson();
