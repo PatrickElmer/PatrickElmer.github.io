@@ -1,0 +1,3 @@
+# Proto-Ryūkyūan
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam finibus diam quis metus fringilla, at luctus lorem mattis. Phasellus sodales,  mauris et porta varius, arcu turpis iaculis turpis, et congue turpis  urna at ex. Aenean lacinia lectus non lorem fringilla blandit. Lorem  ipsum dolor sit amet, consectetur adipiscing elit. Nam id mauris libero. Donec sit amet magna quis quam euismod aliquet. Suspendisse non neque  nisl. Phasellus id erat ullamcorper, viverra felis quis, suscipit velit. Maecenas at semper felis. Vivamus pharetra suscipit magna hendrerit  pellentesque. Donec commodo placerat tortor, mollis posuere ligula  dictum quis.
