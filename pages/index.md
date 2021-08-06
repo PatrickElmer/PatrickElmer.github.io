@@ -13,7 +13,7 @@ svg {
 
 ## Patrick Elmer
 
-I am a PhD student in Historical Linguistics at <a href="www.soken.ac.jp/en" target="_blank">The Graduate University for Advanced Studies</a>, Campus at <a href="www.minpaku.ac.jp/en" target="_blank">Minpaku</a>, Osaka, Japan. My dissertation project _<a href="https://www.minpaku.ac.jp/post-student/14845" target="_blank">Proto-Japonic Origins in the Yangtze Delta: Comparing Rice-related Lexicon of Proto-Japonic with Those in the Language Families of East Asia</a>_ deals with the origins of the Japonic language family.
+I am a PhD student in Historical Linguistics at [The Graduate University for Advanced Studies](www.soken.ac.jp/en), Campus at [Minpaku](www.minpaku.ac.jp/en), Osaka, Japan. My dissertation project [_Proto-Japonic Origins in the Yangtze Delta: Comparing Rice-related Lexicon of Proto-Japonic with Those in the Language Families of East Asia_](https://www.minpaku.ac.jp/post-student/14845) deals with the origins of the Japonic language family.
 
 ### About me
 

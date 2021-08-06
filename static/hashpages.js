@@ -21,13 +21,38 @@ function onRouteChange() {
 }
 
 async function loadContent(uri) {
-  if (!(await fetchData(`pages/${uri}.md`))) {
-    if (!(await fetchData(`pages/${uri}.html`))) {
-      if (!(await fetchData(`pages/404.md`))) {
+  let path = "pages";
+  let protectedPath = false;
+
+  if (window.location.pathname === "/proto-ryukyuan/") {
+    protectedPath = sessionStorage.getItem("hashPassword");
+    if (!protectedPath) {
+      protectedPath = await fetchPasswordProtected();
+      if (!protectedPath) {
+        console.warn("Authentication issue!");
+        return;
+      }
+    }
+    path = protectedPath;
+  }
+
+  if (await fetchData(`${path}/${uri}.md`)) {
+    // Check if Password needs to be set
+    if (protectedPath) {
+      // Password was correct
+      if (!sessionStorage.getItem("hashPassword")) {
+        // Password correct, but not previously known
+        sessionStorage.setItem("hashPassword", protectedPath);
+      }
+    }
+  } else {
+    if (!(await fetchData(`${path}/${uri}.html`))) {
+      if (!(await fetchData(`${path}/404.md`))) {
         updateHashPages("<h1>404. Page not found.</h1>");
       }
     }
   }
+
   onHashLoad();
 }
 
@@ -61,23 +86,22 @@ function onHashLoad() {
   openExternalLinksInNewTab();
 }
 
-async function fetchEncryptedJson() {
+// Function for password protecting the content of the pages
+// (not in use yet)
+
+async function fetchPasswordProtected() {
   let uri = sessionStorage.getItem("hashPassword");
   if (!uri) {
     uri = prompt("Please enter the password");
     if (!uri) {
       console.error("No password provided. Could not retrieve data!");
-      return;
+      return false;
     }
   }
-  let response = await fetch(`static/${sha256(uri)}.json`);
-  if (!response.ok) {
-    console.error("Password incorrect. Could not retrieve data!");
-    return;
-  }
-  let content = await response.text();
-  console.log(content);
-  sessionStorage.setItem("hashPassword", uri);
+
+  console.log(sha256(uri));
+  // sessionStorage.setItem("hashPassword", uri);
+  return sha256(uri);
 }
 
-fetchEncryptedJson();
+// console.log(sha256("passwort123"));
