@@ -2,6 +2,13 @@ window.addEventListener("hashchange", onRouteChange);
 window.addEventListener("DOMContentLoaded", onRouteChange);
 hashPages = document.querySelector("#hashpages");
 
+// Special html page content
+const page_404 = "<h1>404. Page not found.</h1>";
+const page_fail =
+  "<h1>Authentication failure.</h1><p>No password provided. Could not retrieve data!";
+const page_no_pass =
+  "<h1>Login credentials could not be verified.</h1><p>Either the passcode you provided is incorrect, or you are trying to access a page that does not exist. Please reload and try again.</p>";
+
 const converter = new showdown.Converter();
 converter.setOption("tables", true);
 converter.setOption("disableForced4SpacesIndentedSublists", true);
@@ -18,42 +25,45 @@ function onRouteChange() {
     hashLocation = "index";
   }
   loadContent(hashLocation);
+  onHashLoad();
 }
 
 async function loadContent(uri) {
-  let path = "pages";
-  let protectedPath = false;
+  const path = getPath();
 
-  if (window.location.pathname === "/proto-ryukyuan/") {
-    protectedPath = sessionStorage.getItem("hashPassword");
-    if (!protectedPath) {
-      protectedPath = await fetchPasswordProtected();
-      if (!protectedPath) {
-        console.warn("Authentication issue!");
-        return;
-      }
-    }
-    path = protectedPath;
+  // Abort if path could not be determined
+  if (!path) {
+    updateHashPages(page_fail);
+    return;
   }
 
   if (await fetchData(`${path}/${uri}.md`)) {
     // Check if Password needs to be set
-    if (protectedPath) {
-      // Password was correct
-      if (!sessionStorage.getItem("hashPassword")) {
-        // Password correct, but not previously known
-        sessionStorage.setItem("hashPassword", protectedPath);
-      }
+    if (
+      hashPages.dataset.passwordprotected !== undefined &&
+      !sessionStorage.getItem("hashPassword")
+    ) {
+      // Password correct, but not previously known
+      sessionStorage.setItem("hashPassword", path);
     }
-  } else {
-    if (!(await fetchData(`${path}/${uri}.html`))) {
-      if (!(await fetchData(`${path}/404.md`))) {
-        updateHashPages("<h1>404. Page not found.</h1>");
-      }
-    }
+    return;
   }
 
-  onHashLoad();
+  // New password provided, but page could not be loaded
+  if (
+    hashPages.dataset.passwordprotected !== undefined &&
+    !sessionStorage.getItem("hashPassword")
+  ) {
+    updateHashPages(page_no_pass);
+    return;
+  }
+
+  // Try fetching html or 404 page
+  // if (!(await fetchData(`${path}/${uri}.html`))) {
+  //   if (!(await fetchData(`${path}/404.md`))) {
+  updateHashPages(page_404);
+  //   }
+  // }
 }
 
 async function fetchData(link) {
@@ -87,21 +97,23 @@ function onHashLoad() {
 }
 
 // Function for password protecting the content of the pages
-// (not in use yet)
 
-async function fetchPasswordProtected() {
-  let uri = sessionStorage.getItem("hashPassword");
-  if (!uri) {
-    uri = prompt("Please enter the password");
-    if (!uri) {
-      console.error("No password provided. Could not retrieve data!");
-      return false;
-    }
+function getPath() {
+  // Pages without password protection
+  if (hashPages.dataset.passwordprotected === undefined) {
+    return "pages";
   }
 
-  console.log(sha256(uri));
-  // sessionStorage.setItem("hashPassword", uri);
-  return sha256(uri);
-}
+  // If password is already set
+  if (sessionStorage.getItem("hashPassword")) {
+    return sessionStorage.getItem("hashPassword");
+  }
 
-// console.log(sha256("passwort123"));
+  // Prompt for new password
+  let passphrase = prompt("Please enter the passphrase:");
+  if (!passphrase) {
+    console.error("No password provided. Could not retrieve data!");
+    return false;
+  }
+  return sha256(passphrase);
+}
